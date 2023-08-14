@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.12 on linux)" generated="20230810 19:07:39.822" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot" source="/home/runner/work/python-robot-reference/python-robot-reference/tests/robot">
+<suite id="s1-s1" name="Start Game" source="/home/runner/work/python-robot-reference/python-robot-reference/tests/robot/start_game.robot">
+<test id="s1-s1-t1" name="Blank character name" line="7">
+<kw name="Start new game with character">
+<arg>${EMPTY}</arg>
+<arg>Character</arg>
+<arg>100</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>0</arg>
+<kw name="Initialize Controller" library="StartGameLibrary">
+<status status="PASS" starttime="20230810 19:07:39.855" endtime="20230810 19:07:39.855"/>
+</kw>
+<kw name="Provided Character With Name" library="StartGameLibrary">
+<arg>${providedCharacterName}</arg>
+<status status="PASS" starttime="20230810 19:07:39.855" endtime="20230810 19:07:39.855"/>
+</kw>
+<kw name="Character Name Should Be" library="StartGameLibrary">
+<arg>${characterName}</arg>
+<status status="PASS" starttime="20230810 19:07:39.855" endtime="20230810 19:07:39.856"/>
+</kw>
+<kw name="Number Of Map Positions Should Be" library="StartGameLibrary">
+<arg>${numPositions}</arg>
+<status status="PASS" starttime="20230810 19:07:39.856" endtime="20230810 19:07:39.856"/>
+</kw>
+<kw name="Starting X Coordinate Should Be" library="StartGameLibrary">
+<arg>${startingPositionX}</arg>
+<status status="PASS" starttime="20230810 19:07:39.856" endtime="20230810 19:07:39.856"/>
+</kw>
+<kw name="Starting Y Coordinate Should Be" library="StartGameLibrary">
+<arg>${startingPositionY}</arg>
+<status status="PASS" starttime="20230810 19:07:39.856" endtime="20230810 19:07:39.856"/>
+</kw>
+<kw name="Starting Move Count Should Be" library="StartGameLibrary">
+<arg>${startingMoveCount}</arg>
+<status status="PASS" starttime="20230810 19:07:39.857" endtime="20230810 19:07:39.857"/>
+</kw>
+<status status="PASS" starttime="20230810 19:07:39.854" endtime="20230810 19:07:39.857"/>
+</kw>
+<status status="PASS" starttime="20230810 19:07:39.853" endtime="20230810 19:07:39.857"/>
+</test>
+<doc>Test start of game. That character should be like 
+
+ https://raw.githubusercontent.com/level-up-program/python-robot-reference/main/tests/robot/images/gamerErin.png</doc>
+<status status="PASS" starttime="20230810 19:07:39.847" endtime="20230810 19:07:39.858"/>
+</suite>
+<status status="PASS" starttime="20230810 19:07:39.823" endtime="20230810 19:07:39.859"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Start Game">Robot.Start Game</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
