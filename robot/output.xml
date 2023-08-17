@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.12 on linux)" generated="20230816 21:18:47.211" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.12 on linux)" generated="20230817 13:47:01.132" rpa="false" schemaversion="3">
 <suite id="s1" name="Robot" source="/home/runner/work/team-2-cltbitgames-c2fd656a/team-2-cltbitgames-c2fd656a/tests/robot">
 <suite id="s1-s1" name="Create Character" source="/home/runner/work/team-2-cltbitgames-c2fd656a/team-2-cltbitgames-c2fd656a/tests/robot/create_character.robot">
 <test id="s1-s1-t1" name="Provided name" line="7">
@@ -8,18 +8,18 @@
 <arg>Erin</arg>
 <kw name="Provide Character Name" library="CreateCharacterLibrary">
 <arg>${characterNameInput}</arg>
-<status status="PASS" starttime="20230816 21:18:47.237" endtime="20230816 21:18:47.237"/>
+<status status="PASS" starttime="20230817 13:47:01.158" endtime="20230817 13:47:01.159"/>
 </kw>
 <kw name="Create The Character" library="CreateCharacterLibrary">
-<status status="PASS" starttime="20230816 21:18:47.237" endtime="20230816 21:18:47.237"/>
+<status status="PASS" starttime="20230817 13:47:01.159" endtime="20230817 13:47:01.159"/>
 </kw>
 <kw name="Character Name Is" library="CreateCharacterLibrary">
 <arg>${characterNameOutput}</arg>
-<status status="PASS" starttime="20230816 21:18:47.237" endtime="20230816 21:18:47.237"/>
+<status status="PASS" starttime="20230817 13:47:01.159" endtime="20230817 13:47:01.159"/>
 </kw>
-<status status="PASS" starttime="20230816 21:18:47.236" endtime="20230816 21:18:47.238"/>
+<status status="PASS" starttime="20230817 13:47:01.158" endtime="20230817 13:47:01.159"/>
 </kw>
-<status status="PASS" starttime="20230816 21:18:47.236" endtime="20230816 21:18:47.238"/>
+<status status="PASS" starttime="20230817 13:47:01.157" endtime="20230817 13:47:01.160"/>
 </test>
 <test id="s1-s1-t2" name="Default name" line="8">
 <kw name="Create character">
@@ -27,21 +27,21 @@
 <arg>Character</arg>
 <kw name="Provide Character Name" library="CreateCharacterLibrary">
 <arg>${characterNameInput}</arg>
-<status status="PASS" starttime="20230816 21:18:47.239" endtime="20230816 21:18:47.239"/>
+<status status="PASS" starttime="20230817 13:47:01.161" endtime="20230817 13:47:01.161"/>
 </kw>
 <kw name="Create The Character" library="CreateCharacterLibrary">
-<status status="PASS" starttime="20230816 21:18:47.239" endtime="20230816 21:18:47.239"/>
+<status status="PASS" starttime="20230817 13:47:01.161" endtime="20230817 13:47:01.162"/>
 </kw>
 <kw name="Character Name Is" library="CreateCharacterLibrary">
 <arg>${characterNameOutput}</arg>
-<status status="PASS" starttime="20230816 21:18:47.239" endtime="20230816 21:18:47.240"/>
+<status status="PASS" starttime="20230817 13:47:01.162" endtime="20230817 13:47:01.162"/>
 </kw>
-<status status="PASS" starttime="20230816 21:18:47.238" endtime="20230816 21:18:47.240"/>
+<status status="PASS" starttime="20230817 13:47:01.160" endtime="20230817 13:47:01.162"/>
 </kw>
-<status status="PASS" starttime="20230816 21:18:47.238" endtime="20230816 21:18:47.240"/>
+<status status="PASS" starttime="20230817 13:47:01.160" endtime="20230817 13:47:01.162"/>
 </test>
 <doc>I want to create a new custom character, setting only their name.</doc>
-<status status="PASS" starttime="20230816 21:18:47.230" endtime="20230816 21:18:47.240"/>
+<status status="PASS" starttime="20230817 13:47:01.152" endtime="20230817 13:47:01.163"/>
 </suite>
 <suite id="s1-s2" name="Move" source="/home/runner/work/team-2-cltbitgames-c2fd656a/team-2-cltbitgames-c2fd656a/tests/robot/move.robot">
 <test id="s1-s2-t1" name="Move in the middle of the board" line="7">
@@ -55,36 +55,36 @@
 <arg>2</arg>
 <kw name="Initialize Character Xposition With" library="MoveLibrary">
 <arg>${startingX}</arg>
-<status status="PASS" starttime="20230816 21:18:47.245" endtime="20230816 21:18:47.246"/>
+<status status="PASS" starttime="20230817 13:47:01.168" endtime="20230817 13:47:01.169"/>
 </kw>
 <kw name="Initialize Character Yposition With" library="MoveLibrary">
 <arg>${startingY}</arg>
-<status status="PASS" starttime="20230816 21:18:47.246" endtime="20230816 21:18:47.246"/>
+<status status="PASS" starttime="20230817 13:47:01.169" endtime="20230817 13:47:01.169"/>
 </kw>
 <kw name="Initialize Character Movecount With" library="MoveLibrary">
 <arg>${startingMoveCount}</arg>
-<status status="PASS" starttime="20230816 21:18:47.246" endtime="20230816 21:18:47.246"/>
+<status status="PASS" starttime="20230817 13:47:01.169" endtime="20230817 13:47:01.169"/>
 </kw>
 <kw name="Move In Direction" library="MoveLibrary">
 <arg>${direction}</arg>
-<status status="PASS" starttime="20230816 21:18:47.246" endtime="20230816 21:18:47.246"/>
+<msg timestamp="20230817 13:47:01.170" level="FAIL">KeyError: 'NORTH'</msg>
+<status status="FAIL" starttime="20230817 13:47:01.169" endtime="20230817 13:47:01.186"/>
 </kw>
 <kw name="Character Xposition Should Be" library="MoveLibrary">
 <arg>${endingX}</arg>
-<msg timestamp="20230816 21:18:47.247" level="FAIL">Expected: 0, Actual: -100</msg>
-<status status="FAIL" starttime="20230816 21:18:47.246" endtime="20230816 21:18:47.247"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.187" endtime="20230817 13:47:01.187"/>
 </kw>
 <kw name="Character Yposition Should Be" library="MoveLibrary">
 <arg>${endingY}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.247" endtime="20230816 21:18:47.247"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.187" endtime="20230817 13:47:01.187"/>
 </kw>
 <kw name="Character Movecount Should Be" library="MoveLibrary">
 <arg>${endingMoveCount}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.248" endtime="20230816 21:18:47.248"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.187" endtime="20230817 13:47:01.187"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.245" endtime="20230816 21:18:47.248"/>
+<status status="FAIL" starttime="20230817 13:47:01.168" endtime="20230817 13:47:01.187"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.244" endtime="20230816 21:18:47.248">Expected: 0, Actual: -100</status>
+<status status="FAIL" starttime="20230817 13:47:01.168" endtime="20230817 13:47:01.188">KeyError: 'NORTH'</status>
 </test>
 <test id="s1-s2-t2" name="Move on the edge of the board" line="8">
 <kw name="Move character">
@@ -97,39 +97,39 @@
 <arg>6</arg>
 <kw name="Initialize Character Xposition With" library="MoveLibrary">
 <arg>${startingX}</arg>
-<status status="PASS" starttime="20230816 21:18:47.249" endtime="20230816 21:18:47.250"/>
+<status status="PASS" starttime="20230817 13:47:01.189" endtime="20230817 13:47:01.189"/>
 </kw>
 <kw name="Initialize Character Yposition With" library="MoveLibrary">
 <arg>${startingY}</arg>
-<status status="PASS" starttime="20230816 21:18:47.250" endtime="20230816 21:18:47.250"/>
+<status status="PASS" starttime="20230817 13:47:01.189" endtime="20230817 13:47:01.190"/>
 </kw>
 <kw name="Initialize Character Movecount With" library="MoveLibrary">
 <arg>${startingMoveCount}</arg>
-<status status="PASS" starttime="20230816 21:18:47.250" endtime="20230816 21:18:47.250"/>
+<status status="PASS" starttime="20230817 13:47:01.190" endtime="20230817 13:47:01.190"/>
 </kw>
 <kw name="Move In Direction" library="MoveLibrary">
 <arg>${direction}</arg>
-<status status="PASS" starttime="20230816 21:18:47.250" endtime="20230816 21:18:47.250"/>
+<msg timestamp="20230817 13:47:01.190" level="FAIL">KeyError: 'SOUTH'</msg>
+<status status="FAIL" starttime="20230817 13:47:01.190" endtime="20230817 13:47:01.190"/>
 </kw>
 <kw name="Character Xposition Should Be" library="MoveLibrary">
 <arg>${endingX}</arg>
-<msg timestamp="20230816 21:18:47.251" level="FAIL">Expected: 0, Actual: -100</msg>
-<status status="FAIL" starttime="20230816 21:18:47.250" endtime="20230816 21:18:47.251"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.191" endtime="20230817 13:47:01.191"/>
 </kw>
 <kw name="Character Yposition Should Be" library="MoveLibrary">
 <arg>${endingY}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.251" endtime="20230816 21:18:47.251"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.191" endtime="20230817 13:47:01.191"/>
 </kw>
 <kw name="Character Movecount Should Be" library="MoveLibrary">
 <arg>${endingMoveCount}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.251" endtime="20230816 21:18:47.251"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.191" endtime="20230817 13:47:01.191"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.249" endtime="20230816 21:18:47.252"/>
+<status status="FAIL" starttime="20230817 13:47:01.189" endtime="20230817 13:47:01.191"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.249" endtime="20230816 21:18:47.252">Expected: 0, Actual: -100</status>
+<status status="FAIL" starttime="20230817 13:47:01.188" endtime="20230817 13:47:01.191">KeyError: 'SOUTH'</status>
 </test>
 <doc>I want to move my character. If they attempt to move past a boundary, the move results in no change in position.</doc>
-<status status="FAIL" starttime="20230816 21:18:47.241" endtime="20230816 21:18:47.252"/>
+<status status="FAIL" starttime="20230817 13:47:01.164" endtime="20230817 13:47:01.192"/>
 </suite>
 <suite id="s1-s3" name="Start Game" source="/home/runner/work/team-2-cltbitgames-c2fd656a/team-2-cltbitgames-c2fd656a/tests/robot/start_game.robot">
 <test id="s1-s3-t1" name="Blank character name" line="7">
@@ -139,35 +139,35 @@
 <arg>0</arg>
 <arg>0</arg>
 <kw name="Initialize Controller" library="StartGameLibrary">
-<status status="PASS" starttime="20230816 21:18:47.257" endtime="20230816 21:18:47.257"/>
+<status status="PASS" starttime="20230817 13:47:01.197" endtime="20230817 13:47:01.197"/>
 </kw>
 <kw name="Number Of Map Positions Should Be" library="StartGameLibrary">
 <arg>${numPositions}</arg>
-<msg timestamp="20230816 21:18:47.257" level="FAIL">Expected: 100, Actual: -10</msg>
-<status status="FAIL" starttime="20230816 21:18:47.257" endtime="20230816 21:18:47.258"/>
+<msg timestamp="20230817 13:47:01.198" level="FAIL">Expected: 100, Actual: -10</msg>
+<status status="FAIL" starttime="20230817 13:47:01.197" endtime="20230817 13:47:01.198"/>
 </kw>
 <kw name="Starting X Coordinate Should Be" library="StartGameLibrary">
 <arg>${startingPositionX}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.258" endtime="20230816 21:18:47.258"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.198" endtime="20230817 13:47:01.198"/>
 </kw>
 <kw name="Starting Y Coordinate Should Be" library="StartGameLibrary">
 <arg>${startingPositionY}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.258" endtime="20230816 21:18:47.258"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.198" endtime="20230817 13:47:01.198"/>
 </kw>
 <kw name="Starting Move Count Should Be" library="StartGameLibrary">
 <arg>${startingMoveCount}</arg>
-<status status="NOT RUN" starttime="20230816 21:18:47.258" endtime="20230816 21:18:47.258"/>
+<status status="NOT RUN" starttime="20230817 13:47:01.198" endtime="20230817 13:47:01.198"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.256" endtime="20230816 21:18:47.258"/>
+<status status="FAIL" starttime="20230817 13:47:01.197" endtime="20230817 13:47:01.199"/>
 </kw>
-<status status="FAIL" starttime="20230816 21:18:47.256" endtime="20230816 21:18:47.259">Expected: 100, Actual: -10</status>
+<status status="FAIL" starttime="20230817 13:47:01.196" endtime="20230817 13:47:01.199">Expected: 100, Actual: -10</status>
 </test>
 <doc>Test start of game. Let's play 
 
  https://raw.githubusercontent.com/level-up-program/python-robot-reference/main/tests/robot/images/gamerErin.png</doc>
-<status status="FAIL" starttime="20230816 21:18:47.253" endtime="20230816 21:18:47.259"/>
+<status status="FAIL" starttime="20230817 13:47:01.193" endtime="20230817 13:47:01.199"/>
 </suite>
-<status status="FAIL" starttime="20230816 21:18:47.212" endtime="20230816 21:18:47.260"/>
+<status status="FAIL" starttime="20230817 13:47:01.133" endtime="20230817 13:47:01.200"/>
 </suite>
 <statistics>
 <total>
