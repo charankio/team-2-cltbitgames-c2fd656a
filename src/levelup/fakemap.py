@@ -1,0 +1,3 @@
+class Fake_GameMap
+
+    
