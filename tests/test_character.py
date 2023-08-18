@@ -6,7 +6,7 @@ class FakeGameMap():
     xCoordinate = "x"
     yCoordiante = "y"
 
-    def calculatePosition():
+    def calculatePosition(self, arg1, arg2):
         return [1, 4]
         
 
@@ -28,4 +28,5 @@ class TestCharacterInitWithName(TestCase):
 
         moveDirection = "L"
         testObj = char.move(moveDirection)
+        testObj = char.cpos
         self.assertEqual([1, 4], testObj)
