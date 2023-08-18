@@ -7,7 +7,7 @@ class FakeGameMap():
     yCoordiante = "y"
 
     def calculatePosition():
-        pass
+        return [1, 4]
         
 
 class TestCharacterInitWithName(TestCase):
@@ -23,7 +23,9 @@ class TestCharacterInitWithName(TestCase):
     def test_move(self):
         ARBITRARY_NAME = ""
         char = Character(ARBITRARY_NAME)
-        charPOS = char.cpos = [1, 5]
+        char.cpos = [1, 5]
+        char.map = FakeGameMap()
+
         moveDirection = "L"
         testObj = char.move(moveDirection)
         self.assertEqual([1, 4], testObj)
