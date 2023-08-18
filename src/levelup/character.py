@@ -11,5 +11,5 @@ class Character:
         pass
     
     @staticmethod
-    def move():
+    def move(moveDirction):
         pass

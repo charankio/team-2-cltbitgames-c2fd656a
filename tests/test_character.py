@@ -21,7 +21,9 @@ class TestCharacterInitWithName(TestCase):
         self.assertFalse(testObj)
     
     def test_move(self):
-        charPOS = Character.cpos = [1, 5]
+        ARBITRARY_NAME = ""
+        char = Character(ARBITRARY_NAME)
+        charPOS = char.cpos = [1, 5]
         moveDirection = "L"
-        testObj = charPOS.move(moveDirection)
+        testObj = char.move(moveDirection)
         self.assertEqual([1, 4], testObj)
