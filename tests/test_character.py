@@ -7,6 +7,7 @@ class FakeGameMap():
     yCoordiante = "y"
 
     def calculatePosition():
+        pass
         
 
 class TestCharacterInitWithName(TestCase):
